@@ -1,0 +1,12 @@
+<svg version='1.1' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <filter height='100%' id='texture-wood' width='100%' x='0%' y='0%'>
+      <feTurbulence baseFrequency='0.01' numOctaves='3' result='noise' type='turbulence'/>
+      <feDiffuseLighting in='noise' lighting-color='white' result='diffLight' surfaceScale='2'>
+        <feDistantLight azimuth='45' elevation='35'/>
+      </feDiffuseLighting>
+      <feColorMatrix type='saturate' values='0'/>
+    </filter>
+  </defs>
+  <rect filter="url( '#texture-wood' )" height='100%' width='100%' x='0%' y='0%'/>
+</svg>
