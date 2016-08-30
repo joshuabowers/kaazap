@@ -22,6 +22,20 @@
   padding: 0.5em 1em
   box-shadow: 0 0.5em 1em darken( $color, 10% )
 
+=background-filter( $filters )
+  position: relative
+  z-index: 0
+  &::before
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    +filter( $filters )
+    z-index: -1
+
+
 // =page-break-inside( $value )
 //   +prefixer( page-break-inside, $value, webkit spec )
 
