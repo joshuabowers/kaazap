@@ -39,9 +39,10 @@ preload_app!
 # or connections that may have been created at application boot, Ruby
 # cannot share connections between processes.
 #
-# on_worker_boot do
-#   ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
-# end
+on_worker_boot do
+  Mongoid.load! Rails.root.join('config', 'mongoid.yml'), :production
+  # ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
+end
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
