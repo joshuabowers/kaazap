@@ -12,8 +12,18 @@
       %header.title
         %h1 KaaZaP
 
-      .card{ data: { value: 10 } }
-      .card.negative{ data: { value: -6 } }
-      .card.positive.two-thirds-size{ data: { value: 3 } }
-      .card.special.half-size{ data: { value: 'D' } }
+      .played
+        .card{ data: { value: 10 } }
+          .material-icons settings
+        .card.negative{ data: { value: 6 } }
+          .material-icons games
+        .card.positive{ data: { value: 3 } }
+          .material-icons donut_large
+        .card.special{ data: { value: 'D' } }
+          .material-icons bubble_chart
+        .card.either.positive{ data: { value: 5 } }
+          .material-icons device_hub
+        .card.either.negative{ data: { value: 2 } }
+          .material-icons toys
+
       = yield
