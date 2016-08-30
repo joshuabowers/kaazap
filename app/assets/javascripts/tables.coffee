@@ -5,3 +5,6 @@
 $ ->
   $('.card.either').on 'click', ->
     $(this).toggleClass( 'positive negative' )
+
+  $('.card.positive:not(.either), .card.negative:not(.either)').on 'click', ->
+    $(this).toggleClass( 'positive negative' )
