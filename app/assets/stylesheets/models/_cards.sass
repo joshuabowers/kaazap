@@ -14,6 +14,7 @@
   @extend %flexed--column
   @extend %flexed-align--centered
   @extend %flexed-justify--centered
+  +backface-visibility( hidden )
 
   &:hover
     +transform( translateY( -0.5em ) scale( 1.05 ) )
@@ -35,6 +36,7 @@
     right: 0
     bottom: 0
     +transform( rotate( 180deg ) )
+    +backface-visibility( hidden )
   &.negative
     &::before, &::after
       content: '-' attr( data-value )
