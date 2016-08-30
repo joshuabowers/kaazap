@@ -24,4 +24,9 @@
     %main
       %header.title
         %h1 KaaZaP
+
+      .card{ data: { value: 10 } }
+      .card.negative{ data: { value: 6 } }
+      .card.positive.two-thirds-size{ data: { value: 3 } }
+      .card.special.half-size{ data: { value: 'D' } }
       = yield
