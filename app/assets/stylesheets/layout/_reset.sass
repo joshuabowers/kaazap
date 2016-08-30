@@ -1,0 +1,46 @@
+html, body
+  @extend %marginless
+  @extend %paddingless
+  @extend %font-family
+  +font-feature-settings( 'liga', 'pnum' )
+  @extend %font-size--normal
+  @extend %line-height
+  background: $site-background-color
+  color: white
+  min-width: 100vw
+  min-height: 100vh
+  +text-size-adjust(auto)
+
+  @media #{$media-query-mobile}
+    font-size: 32px
+
+article, header, footer, main
+  @extend %marginless
+  @extend %paddingless
+
+article
+  background: white
+  color: black
+
+@for $size from 0 through 2
+  h#{$size + 1}
+    font-size: 3em - 0.5 * $size
+    @extend %marginless
+    @extend %paddingless
+
+p, ol, ul, td
+  @extend %font-family
+  @extend %line-height
+  font-size: inherit
+
+input, textarea, select
+  @extend %font-size--normal
+
+a
+  color: #000
+
+  &:visited
+    color: #666
+
+  &:hover
+    color: $site-blue
