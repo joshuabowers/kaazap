@@ -4,12 +4,20 @@
   "dependencies": {
     "@rails/webpacker": "^3.2.0",
     "actioncable": "^5.1.4",
+    "autoprefixer": "^7.2.4",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "coffeescript": "1.12.7",
     "normalizr": "^3.2.4",
     "prop-types": "^15.6.0",
+    "re-reselect": "^1.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-paginate": "^5.0.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.2.1",
     "redux": "^3.7.2",
     "redux-act": "^1.5.1",
     "redux-cablecar": "^2.0.3",
@@ -20,5 +28,11 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^2.9.7"
-  }
+  },
+  "version": "1.0.0",
+  "description": "A pazaak clone",
+  "main": "index.js",
+  "repository": "https://github.com/joshuabowers/kaazap.git",
+  "author": "Joshua Bowers <joshua.bowers+code@gmail.com>",
+  "license": "MIT"
 }
